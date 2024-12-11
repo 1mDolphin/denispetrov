@@ -40,17 +40,19 @@ function HomePage() {
             <div className='pagewrap'>
                 <div className='header_div'>
                     <div className='menu_div'>
-                        <button className='animation'><h2>MENU</h2></button>
+                        <button className='animation'><h3>MENU</h3></button>
                     </div>
                     <div className='contact_div'>
-                        <button className='animation'><h2>HIRE ME</h2></button>
+                        <button className='animation'><h3>HIRE ME</h3></button>
                     </div>
                 </div>
 
                 <div className='page-content'>
                     <div className='greetings_div'>
-                        <h1>Hi, my</h1>
-                        <h1>name is <b>Denis</b></h1>
+                        <div className='name'>
+                            <h1>Hi, my</h1>
+                            <h1>name is <b>Denis</b></h1>
+                        </div>
                         <p>I'm a <b>frontend creative developer</b> from</p>
                         <p>Pärnu, Estonia</p>
                     </div>
@@ -77,8 +79,8 @@ function HomePage() {
                     <div className='projects'>
                         <div className='project-image'></div>
                         <div className='project-info'>
-                            <div className='project-name'>Gachi.js</div>
-                            <div className='project-deskr'></div>
+                            <a className='project-name' href='https://github.com/Zewasik/Gachi.js'>Gachi.js</a>
+                            <div className='project-descr'>Gachi.js is a lightweight and simple JSX-based framework that allows you to create and manipulate DOM elements. In this documentation, we will explore the features of Gachi.js and provide code examples with explanations to demonstrate how to perform various tasks, such as creating elements, handling events, nesting elements, and adding attributes.</div>
                         </div>
                     </div>
                 </div>
