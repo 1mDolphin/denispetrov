@@ -1,0 +1,32 @@
+:root {
+  @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+  font-weight: 400;
+
+
+  color-scheme: light dark;
+  color: rgb(15, 27, 97);
+  background-color: rgb(244, 249, 252);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+#root {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: flex-start;
+
+  height: 300vh;
+  width: 100%;
+
+  margin: 0;
+
+  box-sizing: border-box;
+
+}
