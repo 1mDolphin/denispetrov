@@ -11,6 +11,13 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --font-size-heading: clamp(14px, 3rem, 5rem);
+  --font-size-subheading: clamp(14px, 1rem, 1.5rem);
+  --font-size-body: clamp(14px, 3.5vw, 16px);
+  --color-primary: rgb(15, 27, 97);
+  --color-accent: #f00;
+  --spacing-medium: 40px;
 }
 
 html,
@@ -22,11 +29,9 @@ body,
   align-items: center;
   justify-content: flex-start;
 
-  height: 300vh;
   width: 100%;
 
   margin: 0;
 
   box-sizing: border-box;
-
 }
