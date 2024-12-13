@@ -4,36 +4,15 @@ html {
     padding: 0;
 }
 
-
-h1 {
-    font-weight: 100;
-    font-size: clamp(24px, 4rem, 5rem);
-    line-height: 1.2;
-}
-
-h3 {
-    font-weight: 100;
-    font-size: clamp(14px, 1rem, 1.5rem);
-}
-
-b {
-    font-weight: 900;
-}
-
-.name {
-    display: flex;
-    flex-direction: column;
-}
-
-
 .about-page_pagewrap {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
 
+
     width: 50%;
-    height: 100vh;
+    height: 200vh;
 
     overflow-y: hidden;
     overflow-x: auto;
@@ -61,10 +40,26 @@ b {
     z-index: 3;
 }
 
-.about-me {
+.about-me-content {
     display: flex;
     flex-direction: column;
-    padding-left: 25%;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
+
+    justify-content: center;
+
+    padding-right: 40%;
+
+    gap: 40px;
+
+    height: 100%;
+    width: 60%;
+}
+
+.about-me-content h1 {
+    font-size: clamp(12px 2rem 5rem);
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }

@@ -4,6 +4,19 @@ import './home.css'
 
 function HomePage() {
 
+    const handleContactClick = () => {
+        const email = 'denispetrov@gmail.com';
+        const subject = 'Contact Request from Portfolio Website';
+        const body = 'Hello Denis,\n\nI would like to get in touch with you regarding...';
+
+        // Create mailto link
+        const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+        // Open default email client
+        window.location.href = mailtoLink;
+    };
+
+
 
     const handlePageTransition = () => {
         window.startPageTransition('/about');
@@ -15,7 +28,12 @@ function HomePage() {
             <div className='pagewrap'>
                 <div className='header_div'>
                     <div className='contact_div'>
-                        <button className='animation'><h3>HIRE ME</h3></button>
+                        <button
+                            className='animation'
+                            onClick={handleContactClick}
+                        >
+                            <h3>CONTACT ME</h3>
+                        </button>
                     </div>
                 </div>
 
@@ -25,8 +43,12 @@ function HomePage() {
                             <h1>Hi, my</h1>
                             <h1>name is <b>Denis.</b></h1>
                         </div>
-                        <p>I'm a <b>frontend creative developer</b> from</p>
-                        <p>Pärnu, Estonia</p>
+                        <div className='cross-line'></div>
+                        <div>
+                            <p>I'm a <b>frontend creative developer</b> from</p>
+                            <p>Pärnu, Estonia</p>
+                        </div>
+
                     </div>
                     <div className='scroll'>
                         <div className='scroll-text'><span>S</span><span>R</span><span>O</span><span>L</span><span>L</span></div>

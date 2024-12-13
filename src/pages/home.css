@@ -4,27 +4,10 @@ html {
     padding: 0;
 }
 
-
-h1 {
-    font-weight: 100;
-    font-size: clamp(24px, 4rem, 5rem);
-    line-height: 1.2;
-}
-
-h3 {
-    font-weight: 100;
-    font-size: clamp(14px, 1rem, 1.5rem);
-}
-
-b {
-    font-weight: 900;
-}
-
 .name {
     display: flex;
     flex-direction: column;
 }
-
 
 .pagewrap {
     display: flex;
@@ -86,6 +69,8 @@ b {
     padding-left: 25%;
     line-height: 1.2;
     letter-spacing: -0.02em;
+
+    gap: 30px;
 }
 
 .greetings_div h1 {
@@ -174,6 +159,8 @@ b {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    gap: 40px;
 
     padding-left: 25%;
 
