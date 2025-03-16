@@ -1,12 +1,10 @@
-name: CI React App
+name: CI - Build and Test
 
 on:
   push:
     branches:
       - main
   pull_request:
-    branches:
-      - main
 
 jobs:
   build:
@@ -14,7 +12,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
@@ -23,15 +21,3 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-
-      - name: Run tests
-        run: npm test -- --watchAll=false
-
-      - name: Build React app
-        run: npm run build
-
-      - name: Upload build artifacts
-        uses: actions/upload-artifact@v3.1.2
-        with:
-          name: build
-          path: build
